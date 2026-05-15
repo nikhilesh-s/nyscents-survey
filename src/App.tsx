@@ -118,7 +118,7 @@ function FormSection() {
     <section
       style={{
         position: 'relative',
-        padding: '0 24px 120px',
+        padding: '0 clamp(12px, 3vw, 24px) 120px',
         display: 'flex',
         justifyContent: 'center',
         overflow: 'hidden',
@@ -146,7 +146,7 @@ function FormSection() {
           position: 'relative',
           zIndex: 1,
           width: '100%',
-          maxWidth: '640px',
+          maxWidth: '920px',
         }}
       >
         {/* Hairline rule */}
@@ -164,7 +164,7 @@ function FormSection() {
             background: 'rgba(255,255,255,0.035)',
             border: '1px solid rgba(232,227,218,0.08)',
             borderRadius: '16px',
-            padding: '40px 32px',
+            padding: 'clamp(20px, 4vw, 40px) clamp(16px, 3vw, 32px)',
             backdropFilter: 'blur(8px)',
             WebkitBackdropFilter: 'blur(8px)',
           }}
